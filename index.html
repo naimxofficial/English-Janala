@@ -93,6 +93,23 @@
         <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
     </section>
 
+    <section class="flex justify-center mt-10">
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+
+                    <input id="word-search" type="text" placeholder="Search a word" required />
+                </label>
+                <div class="validator-hint hidden">Enter valid word</div>
+            </div>
+            <button class="btn btn-primary join-item" id="btn-search">Search</button>
+        </div>
+    </section>
+
+    <section id="spinner" class="flex justify-center items-center mt-10 hidden">
+        <span class="loading loading-infinity loading-xl"></span>
+    </section>
+
 
     <section id="words-container"
         class="bg-[#F8F8F8] p-10 w-11/12 my-10 mx-auto grid  grid-cols-2  md:grid-cols-3 gap-[30px]">
@@ -102,6 +119,124 @@
             <br>
             <p class="font-bangla text-4xl font-medium">একটি Lesson Select করুন।</p>
         </div>
+    </section>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="space-y-6">
+
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+    </dialog>
+
+    <section class="w-11/12 mx-auto space-y-10">
+        <h2 class="font-bold text-[48px] mb-6 text-center"><span class="text-[#00BCFF]">Frequently</span> Asked
+            Questions</h2>
+        <!-- Questions -->
+        <div class="bg-[#F8F8F8] flex justify-between">
+            <h2 class="p-6">1. How can I start learning English on this website?</h2>
+            <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
+                    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="h-4 w-4 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                    <div tabindex="0" class="card-body">
+                        <p>You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also
+                            offer structured courses to guide you step by step.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-[#F8F8F8] flex justify-between">
+            <h2 class="p-6">2. Is this website free to use?</h2>
+            <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
+                    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="h-4 w-4 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                    <div tabindex="0" class="card-body">
+                        <p>Yes it is!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-[#F8F8F8] flex justify-between">
+            <h2 class="p-6">3. Do I need to create an account?</h2>
+            <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
+                    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="h-4 w-4 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                    <div tabindex="0" class="card-body">
+                        <p>No, you can use this website for free!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-[#F8F8F8] flex justify-between">
+            <h2 class="p-6">4. How can I build my English vocabulary?</h2>
+            <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
+                    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="h-4 w-4 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                    <div tabindex="0" class="card-body">
+                        <p>You can check vocabulary by clicking on the Lesson buttons or search words.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-[#F8F8F8] flex justify-between">
+            <h2 class="p-6">5. Do you offer certificates for completed courses?</h2>
+            <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
+                    <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="h-4 w-4 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                    <div tabindex="0" class="card-body">
+                        <p>Unavailable</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <script src="./script.js"></script>
