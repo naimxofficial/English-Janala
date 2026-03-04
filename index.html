@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google fonts: Poppins , Hind Siliguri and Tiro Bangla -->
+    <!-- Google fonts: Poppins , Inter, Hind Siliguri and Tiro Bangla -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,6 +22,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -41,8 +46,8 @@
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a href=""><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-                    <li><a href=""><i class="fa-solid fa-book-open"></i> Learn</a></li>
-                    <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                        <li><a href=""><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
                     </ul>
                 </div>
                 <a class="flex items-center space-x-1">
@@ -53,9 +58,12 @@
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 space-x-4">
-                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
-                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>
+                            FAQ</a></li>
+                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a>
+                    </li>
+                    <li><a href="" class="btn btn-outline btn-primary"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -64,15 +72,37 @@
     <section class="flex flex-col-reverse md:flex-row justify-between w-11/12 mx-auto items-center gap-10 py-[50px]">
         <div class="content flex-1 text-center md:text-left">
             <h2 class="font-bold text-[48px] mb-6"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
-            <p class="font-bangla opacity-80 font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+            <p class="font-bangla opacity-80 font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ
+            </p>
+            <input type="text" placeholder="Enter Your Name" class="rounded-md w-[320px] opacity-50 p-3 mt-7">
+            <br><br>
+            <input type="password" placeholder="Enter Your password" class="rounded-md w-[320px] opacity-50 p-3">
+            <br><br>
+            <button class="btn btn-active btn-primary">Get Started</button>
         </div>
         <div class="image flex-1">
             <img src="./assets/hero-student.png" alt="">
         </div>
     </section>
 
+    <section>
+        <h2 class="font-bold text-[48px] mb-6 text-center"><span class="text-[#00BCFF] ">Let's</span> Learn Vocabularies
+        </h2>
+
+        <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
+    </section>
 
 
+    <section id="words-container"
+        class="bg-[#F8F8F8] p-10 w-11/12 my-10 mx-auto grid  grid-cols-2  md:grid-cols-3 gap-[30px]">
+
+        <div class="text-center col-span-full">
+            <p class="font-bangla text-[#79716B] text-lg">আপনি এখনো কোন Lesson Select করেন নি</p>
+            <br>
+            <p class="font-bangla text-4xl font-medium">একটি Lesson Select করুন।</p>
+        </div>
+    </section>
 
     <script src="./script.js"></script>
 </body>
