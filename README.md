@@ -1,5 +1,4 @@
 # 📖 English Janala
-
 > **"Janala" means "Window" in Bengali — your window to the English language.**
 
 English Janala is a clean, beginner-friendly vocabulary learning website designed for Bengali speakers who want to build their English vocabulary — word by word, lesson by lesson.
@@ -13,6 +12,7 @@ English Janala is a clean, beginner-friendly vocabulary learning website designe
 | Feature | Details |
 |--------|---------|
 | 📚 **Structured Lessons** | Multiple lessons, each packed with English words |
+| 🔍 **Word Search** | Search any English word instantly without browsing lessons |
 | 🔤 **Word Details** | English word, Bengali meaning & Bengali pronunciation |
 | 📝 **Example Sentences** | See every word used in a real sentence |
 | 🔗 **Similar & Opposite Words** | Expand vocabulary with synonyms & antonyms |
@@ -44,5 +44,3 @@ English Janala is a clean, beginner-friendly vocabulary learning website designe
 ## 📸 Preview
 
 > Visit the live site 👉 [English Janala](https://naimxofficial.github.io/English-Janala/)
-
----
