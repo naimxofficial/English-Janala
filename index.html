@@ -45,9 +45,9 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a href=""><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-                        <li><a href=""><i class="fa-solid fa-book-open"></i> Learn</a></li>
-                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                        <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a href="#learn"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                        <li><a href="#logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
                     </ul>
                 </div>
                 <a class="flex items-center space-x-1">
@@ -58,11 +58,11 @@
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 space-x-4">
-                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>
+                    <li><a href="#faq" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>
                             FAQ</a></li>
-                    <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a>
+                    <li><a href="#learn" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a>
                     </li>
-                    <li><a href="" class="btn btn-outline btn-primary"><i
+                    <li><a href="#logout" class="btn btn-outline btn-primary"><i
                                 class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="learn">
         <h2 class="font-bold text-[48px] mb-6 text-center"><span class="text-[#00BCFF] ">Let's</span> Learn Vocabularies
         </h2>
 
@@ -112,12 +112,13 @@
 
 
     <section id="words-container"
-        class="bg-[#F8F8F8] p-10 w-11/12 my-10 mx-auto grid  grid-cols-2  md:grid-cols-3 gap-[30px] rounded-3xl">
+        class="bg-[#F8F8F8] p-10 w-11/12 my-10 mx-auto grid  grid-cols-1  md:grid-cols-4 gap-[30px] rounded-3xl ">
 
         <div class="text-center col-span-full">
-            <p class="font-bangla text-[#79716B] text-lg">আপনি এখনো কোন Lesson Select করেন নি</p>
+            <img src="./assets/alert-error.png" alt="" class="mx-auto mb-5">
+            <p class="font-bangla text-[#79716B] md:text-lg">আপনি এখনো কোন Lesson Select করেন নি</p>
             <br>
-            <p class="font-bangla text-4xl font-medium">একটি Lesson Select করুন।</p>
+            <p class="font-bangla text-2xl md:text-4xl font-medium">একটি Lesson Select করুন।</p>
         </div>
     </section>
 
@@ -137,13 +138,13 @@
             </div>
     </dialog>
 
-    <section class="w-11/12 mx-auto space-y-8 mt-[100px]">
+    <section id="faq" class="w-11/12 mx-auto space-y-8 mt-[100px]">
         <h2 class="font-bold text-[48px] mb-6 text-center"><span class="text-[#00BCFF]">Frequently</span> Asked
             Questions</h2>
         <!-- Questions -->
         <div class="bg-[#F8F8F8] flex justify-between">
             <h2 class="p-6">1. How can I start learning English on this website?</h2>
-            <div class="dropdown dropdown-left">
+            <div class="dropdown dropdown-top dropdown-left">
                 <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
                     <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         class="h-4 w-4 stroke-current">
@@ -151,7 +152,7 @@
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                <div tabindex="0" class="card card-xs md:card-md dropdown-content bg-base-100 rounded-box z-1 whitespace-pre-line  w-xs md:w-md  shadow-sm">
                     <div tabindex="0" class="card-body">
                         <p>You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also
                             offer structured courses to guide you step by step.</p>
@@ -163,7 +164,7 @@
 
         <div class="bg-[#F8F8F8] flex justify-between">
             <h2 class="p-6">2. Is this website free to use?</h2>
-            <div class="dropdown dropdown-left">
+            <div class="dropdown  dropdown-left ">
                 <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
                     <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         class="h-4 w-4 stroke-current">
@@ -171,7 +172,7 @@
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                <div tabindex="0" class="card card-xs md:card-md md:w-md w-xs dropdown-content bg-base-100 rounded-box z-1 shadow-sm">
                     <div tabindex="0" class="card-body">
                         <p>Yes it is!</p>
                     </div>
@@ -190,7 +191,7 @@
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                <div tabindex="0" class="card card-xs whitespace-nowrap md:card-md  dropdown-content bg-base-100 rounded-box z-1  shadow-sm">
                     <div tabindex="0" class="card-body">
                         <p>No, you can use this website for free!</p>
                     </div>
@@ -201,7 +202,7 @@
 
         <div class="bg-[#F8F8F8] flex justify-between">
             <h2 class="p-6">4. How can I build my English vocabulary?</h2>
-            <div class="dropdown dropdown-left">
+            <div class="dropdown dropdown-bottom dropdown-left">
                 <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
                     <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         class="h-4 w-4 stroke-current">
@@ -209,7 +210,7 @@
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                <div tabindex="0" class="card card-xs md:card-md  dropdown-content bg-base-100 rounded-box z-1 md:whitespace-nowrap whitespace-pre-wrap shadow-sm">
                     <div tabindex="0" class="card-body">
                         <p>You can check vocabulary by clicking on the Lesson buttons or search words.</p>
                     </div>
@@ -220,7 +221,7 @@
 
         <div class="bg-[#F8F8F8] flex justify-between">
             <h2 class="p-6">5. Do you offer certificates for completed courses?</h2>
-            <div class="dropdown dropdown-left">
+            <div class="dropdown dropdown-top dropdown-left">
                 <div tabindex="0" role="button" class="btn btn-circle btn-ghost btn-xs text-info">
                     <svg tabindex="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         class="h-4 w-4 stroke-current">
@@ -228,7 +229,7 @@
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <div tabindex="0" class="card card-xl dropdown-content bg-base-100 rounded-box z-1 w-100 shadow-sm">
+                <div tabindex="0" class="card md:card-md  card-sm dropdown-content bg-base-100 rounded-box z-1  shadow-sm">
                     <div tabindex="0" class="card-body">
                         <p>Unavailable</p>
                     </div>
@@ -247,6 +248,7 @@
                 <span class="tiro-bangla text-xl">জানালা</span>
             </a>
             <h2 class="font-bangla font-medium text-lg">ইংরেজি শিখুন সহজে</h2>
+            <b class="font-bangla">&copy; 2026 Naim X Official</b>
             <p class="font-bangla">Providing ED-Tech Applications since 2026</p>
         </div>
 

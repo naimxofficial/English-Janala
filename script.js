@@ -86,14 +86,14 @@ const displayWords = (words) => {
 
     for (let word of words) {
         const cards = document.createElement("div");
-        cards.innerHTML = `<div class="rounded-xl bg-white card py-10 pt-[50px] pb-[10px] text-center space-y-4">
-            <h2 class="inter font-bold text-[24px]">${word.word ? word.word : "word not found"}</h2>
-            <p class="inter font-medium text-[16px]">Meaning /Pronounciation</p>
-            <div class="font-bangla opacity-80 font-semibold text-[24px]">"${word.meaning ? word.meaning : "meaning not found"} / ${word.pronunciation ? word.pronunciation : "pronunciation not found"}"</div>
-            <div class="flex justify-between items-center p-6">
-            <button onclick="loadWordDetail(${word.id})" class="btn rounded-lg bg-[#1A91FF10] 
+        cards.innerHTML = `<div class="rounded-xl bg-white card pt-10 text-center space-y-2 ">
+            <h2 class="inter font-bold text-xl">${word.word ? word.word : "word not found"}</h2>
+            <p class="inter font-medium text-sm">Meaning /Pronounciation</p>
+            <div class="font-bangla opacity-80 font-semibold text-lg">"${word.meaning ? word.meaning : "meaning not found"} / ${word.pronunciation ? word.pronunciation : "pronunciation not found"}"</div>
+            <div class="flex justify-between items-center px-6 pb-6 pt-3">
+            <button onclick="loadWordDetail(${word.id})" class=" md:btn-md   btn rounded-lg bg-[#1A91FF10] 
             hover:bg-[#1A91FF80]"><i class="fa-solid fa-circle-info"></i></button>
-            <button onclick="pronounceWord('${word.word}')" class="btn rounded-lg bg-[#1A91FF10] hover:bg-[#1A91FF80]"><i class="fa-solid fa-volume-high"></i></button>
+            <button onclick="pronounceWord('${word.word}')" class=" md:btn-md  btn rounded-lg bg-[#1A91FF10] hover:bg-[#1A91FF80]"><i class="fa-solid fa-volume-high"></i></button>
         </div>
         </div>`;
         wordContainer.append(cards);
